@@ -1,5 +1,6 @@
-Proj4.c
-Proj4.pm
-Proj4.xs
-*.o
+lib/PDL/Transform/Proj4.c
+lib/PDL/Transform/Proj4-pp-*
+lib/PDL/Transform/Proj4.pm
+lib/PDL/Transform/Proj4.xs
+*.o*
 *.bs
