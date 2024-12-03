@@ -33,7 +33,7 @@ jobs:
           perl-version: ${{ matrix.perl-version }}
       - name: Install PDL dependencies
         uses: PDLPorters/devops/github-actions/install-dep-pdl-dep@master
-      - name: Install GD
+      - name: Install PROJ
         uses: PDLPorters/devops/github-actions/install-dep-proj@master
       - name: 'ci-dist: target-all'
         uses: PDLPorters/devops/github-actions/ci-dist@master
