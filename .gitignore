@@ -1,3 +1,5 @@
 Proj4.c
 Proj4.pm
 Proj4.xs
+*.o
+*.bs

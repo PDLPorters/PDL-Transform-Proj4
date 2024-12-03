@@ -14,14 +14,14 @@ if ($@) {
 
 my $ppfile = "proj4.pd";
 my $package = [$ppfile, 'Proj4', $package_name];
-my %hash = pdlpp_stdargs_int($package);
+my %hash = pdlpp_stdargs($package);
 $hash{VERSION_FROM} = $ppfile;
 $hash{LIBS}[0] .= ' ' . Alien::proj->libs;
 $hash{INC}     .= ' ' . Alien::proj->cflags;
-$hash{realclean} ||= { FILES => '' };
+$hash{realclean} ||= { FILES => 'Proj4.xs' };
 $hash{realclean}{FILES} .= ' _Inline';
 $hash{PM}{'Demo.pm'} = '$(INST_LIB)/PDL/Demos/Proj4_demo.pm';
 
 undef &MY::postamble; # suppress warning
-*MY::postamble = sub { pdlpp_postamble_int( $package ); };
+*MY::postamble = sub { pdlpp_postamble( $package ); };
 WriteMakefile(%hash);
