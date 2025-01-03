@@ -21,11 +21,11 @@ WriteMakefile(
   AUTHOR => 'PerlDL Developers <pdl-general@lists.sourceforge.net>',
   CONFIGURE_REQUIRES => {
     'ExtUtils::MakeMaker' => 0,
-    'PDL' => '2.094',
+    'PDL' => '2.096',
     'Alien::proj' => '1.29', # guarantee minimum PROJ 7.1 as need degree_output
   },
   PREREQ_PM => {
-    'PDL' => '2.094',
+    'PDL' => '2.096',
   },
   TEST_REQUIRES => {
     'Test::More' => '0.88',
