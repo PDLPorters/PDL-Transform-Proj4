@@ -1,3 +1,5 @@
+- add licence information
+
 2.097 2025-01-03
 - uses PDL 2.096+ lib/*.pd format for quicker builds
 
